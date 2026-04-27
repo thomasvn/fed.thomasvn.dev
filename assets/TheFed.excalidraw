@@ -1,0 +1,3147 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "GelHb_kBfKT0sNwSwaU6-",
+      "type": "rectangle",
+      "x": 368.5,
+      "y": 201,
+      "width": 753.8462710064925,
+      "height": 463.0109068939552,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJ4",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 636750969,
+      "version": 417,
+      "versionNonce": 6228547,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "Qh1Z7EIu-uWK6756m1K_X",
+          "type": "arrow"
+        },
+        {
+          "id": "cRZXRx9ejwqwtaR7DeHBv",
+          "type": "arrow"
+        },
+        {
+          "id": "9-S2IvVNFfIEKc-_vWpyj",
+          "type": "arrow"
+        },
+        {
+          "id": "Fmq9wLa-G7OduTALsYJX5",
+          "type": "arrow"
+        },
+        {
+          "id": "pqAqkr7KQ-ZvXGhJeARUR",
+          "type": "arrow"
+        },
+        {
+          "id": "Ip8qtuUdfK2LqmAflxzeK",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1776141375528,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "ncuJ2aj1a8P8Cofs_z5h1",
+      "type": "text",
+      "x": 563.4333343505859,
+      "y": 217,
+      "width": 354.73333740234375,
+      "height": 50,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJ8",
+      "roundness": null,
+      "seed": 779173815,
+      "version": 302,
+      "versionNonce": 10481517,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375528,
+      "link": null,
+      "locked": false,
+      "text": "The Federal Open Market Committee\n(12 voting members)",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "The Federal Open Market Committee\n(12 voting members)",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "SRLAYHeMfT7fLWYF_nWcb",
+      "type": "text",
+      "x": 616.7213416209654,
+      "y": 11.86727989487514,
+      "width": 259.0425858938916,
+      "height": 69.11488642763283,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJG",
+      "roundness": null,
+      "seed": 1890835063,
+      "version": 358,
+      "versionNonce": 1294649827,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "Qh1Z7EIu-uWK6756m1K_X",
+          "type": "arrow"
+        },
+        {
+          "id": "YnFv-WvITmDdcRR6AL51a",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1776141375528,
+      "link": null,
+      "locked": false,
+      "text": "THE FED",
+      "fontSize": 55.29190914210616,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "THE FED",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Qh1Z7EIu-uWK6756m1K_X",
+      "type": "arrow",
+      "x": 746.2685388265006,
+      "y": 79.5998685939553,
+      "width": 0.7319618001405388,
+      "height": 115.4001314060447,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJK",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 738564793,
+      "version": 542,
+      "versionNonce": 120158669,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "cxxX6-0LRaBFw187sp0GU"
+        }
+      ],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -0.7319618001405388,
+          115.4001314060447
+        ]
+      ],
+      "startBinding": {
+        "elementId": "SRLAYHeMfT7fLWYF_nWcb",
+        "mode": "inside",
+        "fixedPoint": [
+          0.5001,
+          0.98
+        ]
+      },
+      "endBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "cxxX6-0LRaBFw187sp0GU",
+      "type": "text",
+      "x": 686.6307159047827,
+      "y": 132.75,
+      "width": 115.63333129882812,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aJO",
+      "roundness": null,
+      "seed": 684275979,
+      "version": 14,
+      "versionNonce": 1973261699,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "text": "governed by",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "Qh1Z7EIu-uWK6756m1K_X",
+      "originalText": "governed by",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "0QtfO9RsgVHteAqY8VaYo",
+      "type": "rectangle",
+      "x": 402.4944495342546,
+      "y": 285.6659136687316,
+      "width": 300.42743382052197,
+      "height": 212.77979716462644,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "FFGnevKCCyKzXDnZMSvkm"
+      ],
+      "frameId": null,
+      "index": "aJV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 377049879,
+      "version": 237,
+      "versionNonce": 1825749037,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "8-_qT1QXlC8rJP9_HKw_0",
+      "type": "text",
+      "x": 418.35819471818763,
+      "y": 308.818119577836,
+      "width": 231.76666259765625,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "FFGnevKCCyKzXDnZMSvkm"
+      ],
+      "frameId": null,
+      "index": "aJZ",
+      "roundness": null,
+      "seed": 1721267095,
+      "version": 80,
+      "versionNonce": 150334755,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "text": "Board of Governors (7)",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Board of Governors (7)",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "RA3aX6SOQRbcnpvxdX6UZ",
+      "type": "text",
+      "x": 416.2778515149429,
+      "y": 347.4051294263434,
+      "width": 240.03334045410156,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "FFGnevKCCyKzXDnZMSvkm"
+      ],
+      "frameId": null,
+      "index": "aJd",
+      "roundness": null,
+      "seed": 1059993401,
+      "version": 202,
+      "versionNonce": 461712013,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "text": "- nominated by president\n- confirmed by senate\n- 14yr terms\n- chair (jerome powell)",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "- nominated by president\n- confirmed by senate\n- 14yr terms\n- chair (jerome powell)",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "d1S8ZLSPsC8AMw6eoVjBS",
+      "type": "rectangle",
+      "x": 736.5477062227615,
+      "y": 285.6659136687316,
+      "width": 362.7178925759696,
+      "height": 338.4632006711934,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "6ORViR7r_Dm3vaLOrhdSI"
+      ],
+      "frameId": null,
+      "index": "aJl",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 342330937,
+      "version": 195,
+      "versionNonce": 715280579,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "cRZXRx9ejwqwtaR7DeHBv",
+          "type": "arrow"
+        },
+        {
+          "id": "9-S2IvVNFfIEKc-_vWpyj",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "NKpPFe87eIPRuxvd0VY-B",
+      "type": "text",
+      "x": 751.4312671643288,
+      "y": 306.06190458865694,
+      "width": 331.6000061035156,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "6ORViR7r_Dm3vaLOrhdSI"
+      ],
+      "frameId": null,
+      "index": "aJp",
+      "roundness": null,
+      "seed": 642506487,
+      "version": 188,
+      "versionNonce": 66736365,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "text": "Presidents of Regional Fed Banks",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Presidents of Regional Fed Banks",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Zx9oFAAm5y16jzgMJ7ppc",
+      "type": "text",
+      "x": 756.392454144851,
+      "y": 342.44394244582116,
+      "width": 274.1333312988281,
+      "height": 267.6707282250745,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "6ORViR7r_Dm3vaLOrhdSI"
+      ],
+      "frameId": null,
+      "index": "aJt",
+      "roundness": null,
+      "seed": 1840772087,
+      "version": 401,
+      "versionNonce": 205602915,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141375529,
+      "link": null,
+      "locked": false,
+      "text": "- 12 banks, only 5 rotating voters\n- Boston\n- New York (always has a vote)\n- Philadelphia\n- Cleveland\n- Richmond\n- Atlanta\n- Chicago\n- St Louis\n- Minneapolis\n- Kansas City\n- Dallas\n- San Francisco",
+      "fontSize": 16.47204481385074,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "- 12 banks, only 5 rotating voters\n- Boston\n- New York (always has a vote)\n- Philadelphia\n- Cleveland\n- Richmond\n- Atlanta\n- Chicago\n- St Louis\n- Minneapolis\n- Kansas City\n- Dallas\n- San Francisco",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "J1auI6QtlJpZ8YLzzaLGJ",
+      "type": "text",
+      "x": 855.1955967892554,
+      "y": 71.08001906974698,
+      "width": 50,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aK",
+      "roundness": null,
+      "seed": 566436005,
+      "version": 7,
+      "versionNonce": 24263749,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325511008,
+      "link": null,
+      "locked": false,
+      "text": "goals",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "YnFv-WvITmDdcRR6AL51a",
+      "originalText": "goals",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Q0Fz2HI_p848WhYtlKkgX",
+      "type": "rectangle",
+      "x": 1089.3136011551842,
+      "y": -53.585486248411996,
+      "width": 378.61846853562224,
+      "height": 201.9077263804748,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "MN48Tu1anvUbgORYSE8fN"
+      ],
+      "frameId": null,
+      "index": "aOV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 550995385,
+      "version": 362,
+      "versionNonce": 539397797,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "YnFv-WvITmDdcRR6AL51a",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774325569805,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "YnFv-WvITmDdcRR6AL51a",
+      "type": "arrow",
+      "x": 881.763927514857,
+      "y": 46.45852107580511,
+      "width": 201.54967364032723,
+      "height": 0.9031601601875394,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "aOl",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 202784407,
+      "version": 545,
+      "versionNonce": 1007120901,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "J1auI6QtlJpZ8YLzzaLGJ"
+        }
+      ],
+      "updated": 1774325569806,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          201.54967364032723,
+          0.9031601601875394
+        ]
+      ],
+      "startBinding": {
+        "elementId": "SRLAYHeMfT7fLWYF_nWcb",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.9999999999999998,
+          0.5001
+        ]
+      },
+      "endBinding": {
+        "elementId": "Q0Fz2HI_p848WhYtlKkgX",
+        "mode": "orbit",
+        "fixedPoint": [
+          0,
+          0.5001
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "I_x7In7xrKpdNA8T-vg6O",
+      "type": "text",
+      "x": 1118.9541854077722,
+      "y": -34.18500426102918,
+      "width": 327.70001220703125,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "MN48Tu1anvUbgORYSE8fN"
+      ],
+      "frameId": null,
+      "index": "aP",
+      "roundness": null,
+      "seed": 868303385,
+      "version": 214,
+      "versionNonce": 615836005,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325569806,
+      "link": null,
+      "locked": false,
+      "text": "GOALS (mandates from congress)",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "GOALS (mandates from congress)",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "MLd6TecgfeeC5WvPuIQHJ",
+      "type": "text",
+      "x": 1114.221454551077,
+      "y": 7.817982092141335,
+      "width": 324.36372992048257,
+      "height": 112.67518006068947,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#fff9db",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "MN48Tu1anvUbgORYSE8fN"
+      ],
+      "frameId": null,
+      "index": "aPV",
+      "roundness": null,
+      "seed": 1498771287,
+      "version": 421,
+      "versionNonce": 998012101,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325569806,
+      "link": null,
+      "locked": false,
+      "text": "- stable inflation (around 2%)\n- minimum unemployment\n\nadditionally an implicit goal of\nensuring financial system stability",
+      "fontSize": 18.028028809710314,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "- stable inflation (around 2%)\n- minimum unemployment\n\nadditionally an implicit goal of ensuring financial system stability",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "pPy-DvtEw6UaW4jncRh-3",
+      "type": "text",
+      "x": 671.0019554372385,
+      "y": 664.5326076401561,
+      "width": 152.042637016547,
+      "height": 45.03632531627602,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0F",
+      "roundness": null,
+      "seed": 2111053604,
+      "version": 180,
+      "versionNonce": 1617674678,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774328673322,
+      "link": null,
+      "locked": false,
+      "text": "performs",
+      "fontSize": 36.02906025302081,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "performs",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "9joUOOdjIO_q0Xbmwkbfn",
+      "type": "rectangle",
+      "x": -111.34691933092148,
+      "y": 841.4256378750873,
+      "width": 512.5013497596493,
+      "height": 583.5988614357315,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "n34ymJn6ftbtigEf4sn2L"
+      ],
+      "frameId": null,
+      "index": "b0FV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 507729820,
+      "version": 1074,
+      "versionNonce": 1434363140,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "Fmq9wLa-G7OduTALsYJX5",
+          "type": "arrow"
+        },
+        {
+          "id": "CcWg3Q6OYagwSjuotr-s6",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774499057780,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "zt3iMoKnfIr_SBOQbYpH8",
+      "type": "text",
+      "x": -81.03562939008827,
+      "y": 868.3272867147433,
+      "width": 448.2244396054774,
+      "height": 544.9068655465015,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "n34ymJn6ftbtigEf4sn2L"
+      ],
+      "frameId": null,
+      "index": "b0G",
+      "roundness": null,
+      "seed": 255439004,
+      "version": 1469,
+      "versionNonce": 348715908,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774500081841,
+      "link": null,
+      "locked": false,
+      "text": "1. Fed Funds Rate (FFR)\n\nThe interest rate banks charge\neach other for overnight loans. The Fed\nsets a target range (e.g. 5.25% -\n5.50%). The Fed nudges market rates\ninto the window via Open Market\nOperations (OMO), Interest on Reserve\nBalances (IORB) and Overnight Reverse\nRepos (ON RRP).\n\nRAISE rate\n- credit gets expensive\n- slows economy\n- fights inflation\n\nLOWER rate\n- credit gets cheap\n- stimulates economy\n- fights unemployment",
+      "fontSize": 21.79627462186006,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1. Fed Funds Rate (FFR)\n\nThe interest rate banks charge\neach other for overnight loans. The Fed sets a target range (e.g. 5.25% - 5.50%). The Fed nudges market rates into the window via Open Market Operations (OMO), Interest on Reserve Balances (IORB) and Overnight Reverse Repos (ON RRP).\n\nRAISE rate\n- credit gets expensive\n- slows economy\n- fights inflation\n\nLOWER rate\n- credit gets cheap\n- stimulates economy\n- fights unemployment",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "U1htudNxs9BjOX4WlmCBp",
+      "type": "arrow",
+      "x": 646.7120576668611,
+      "y": 670.0109068939553,
+      "width": 138.07121051003418,
+      "height": 169.68280196416833,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0IV",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 880076836,
+      "version": 1523,
+      "versionNonce": 922672772,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499013685,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -138.07121051003418,
+          169.68280196416833
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.4687160852921666,
+          0.8135498977873161
+        ]
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "Hych69o26GpBDywIW-h0I",
+      "type": "rectangle",
+      "x": 241.0107590068635,
+      "y": 848.0820513555934,
+      "width": 535.137829167471,
+      "height": 595.9350896309993,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "wNkMBmAxQ0yaseeIl-dzV"
+      ],
+      "frameId": null,
+      "index": "b0Il",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1876042532,
+      "version": 795,
+      "versionNonce": 1138515132,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499000245,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "Ig4l4btvono86K9Z3cITl",
+      "type": "text",
+      "x": 271.94089833003636,
+      "y": 876.1577492511702,
+      "width": 460.3497326121356,
+      "height": 537.5335254266248,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "wNkMBmAxQ0yaseeIl-dzV"
+      ],
+      "frameId": null,
+      "index": "b0J",
+      "roundness": null,
+      "seed": 527048356,
+      "version": 1065,
+      "versionNonce": 1009900804,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499000245,
+      "link": null,
+      "locked": false,
+      "text": "2. Open Market Operations\n\nBuying/selling Treasury securities to\nmanage short-term rates. Primarily\nshort-term U.S. Treasuries (T-bills). The\nNY Fed's trading desk executes these\ndaily.\n\nBUY bonds\n- injects cash into banking system\n- higher demand for bonds\n- bond prices rise, bond yields fall\n- rates fall\n\nSELL bonds\n- pulls cash out of banking system\n- higher supply of bonds\n- bond prices fall, bond yields rise\n- rates rise",
+      "fontSize": 22.63299054427894,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "2. Open Market Operations\n\nBuying/selling Treasury securities to manage short-term rates. Primarily short-term U.S. Treasuries (T-bills). The NY Fed's trading desk executes these daily.\n\nBUY bonds\n- injects cash into banking system\n- higher demand for bonds\n- bond prices rise, bond yields fall\n- rates fall\n\nSELL bonds\n- pulls cash out of banking system\n- higher supply of bonds\n- bond prices fall, bond yields rise\n- rates rise",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "pvuvzCJ0ZC8Loh3wFOidl",
+      "type": "rectangle",
+      "x": 502.7325422013414,
+      "y": 843.1976813594706,
+      "width": 465.04184178792445,
+      "height": 582.9880870506286,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "2VAYkopfZsiajSsJlRp2f"
+      ],
+      "frameId": null,
+      "index": "b0JV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 2120931356,
+      "version": 1167,
+      "versionNonce": 1716269956,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "pqAqkr7KQ-ZvXGhJeARUR",
+          "type": "arrow"
+        },
+        {
+          "id": "ggsZnFJA-vIyf7pq3mnLf",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774499065498,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "OyQtXwnXTicM-m97S6UQl",
+      "type": "text",
+      "x": 531.3155291755327,
+      "y": 869.9190722497109,
+      "width": 409.3393982634118,
+      "height": 494.74399415568234,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "2VAYkopfZsiajSsJlRp2f"
+      ],
+      "frameId": null,
+      "index": "b0K",
+      "roundness": null,
+      "seed": 1136981028,
+      "version": 1130,
+      "versionNonce": 530622524,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774499072846,
+      "link": null,
+      "locked": false,
+      "text": "2. Quantitative Easing / Tightening\n\nLarge-scale asset purchases (QE) or\nbalance sheet reduction (QT). A non-\nstandard tool, used when rates are\nalready near zero and more stimulus is\nneeded. Used notably in 2008 (GFC)\nand 2020 (COVID).\n\nQE\n- buy long-term bonds\n- lower long-term rates\n- stimulate borrowing & investment\n\nQT\n- let bonds mature / sell\n- reduce money supply\n- tighten financial conditions",
+      "fontSize": 21.98862196247477,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "2. Quantitative Easing / Tightening\n\nLarge-scale asset purchases (QE) or balance sheet reduction (QT). A non-standard tool, used when rates are already near zero and more stimulus is needed. Used notably in 2008 (GFC) and 2020 (COVID).\n\nQE\n- buy long-term bonds\n- lower long-term rates\n- stimulate borrowing & investment\n\nQT\n- let bonds mature / sell\n- reduce money supply\n- tighten financial conditions",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Fmq9wLa-G7OduTALsYJX5",
+      "type": "arrow",
+      "x": 525.5087243511568,
+      "y": 670.0109068939553,
+      "width": 367.233263074374,
+      "height": 165.41473098113204,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0O",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 7537188,
+      "version": 1378,
+      "versionNonce": 65758340,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774499057781,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -367.233263074374,
+          165.41473098113204
+        ]
+      ],
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.478998083208346,
+          0.8144195504668108
+        ]
+      },
+      "endBinding": {
+        "elementId": "9joUOOdjIO_q0Xbmwkbfn",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "pqAqkr7KQ-ZvXGhJeARUR",
+      "type": "arrow",
+      "x": 727.5950276436165,
+      "y": 670.0109068939553,
+      "width": 7.438004484738713,
+      "height": 167.1867744655152,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0P",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1152022940,
+      "version": 1374,
+      "versionNonce": 1896030980,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774499065499,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          7.438004484738713,
+          167.1867744655152
+        ]
+      ],
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.4709410832595949,
+          0.814995071795633
+        ]
+      },
+      "endBinding": {
+        "elementId": "pvuvzCJ0ZC8Loh3wFOidl",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "YShQjvt9RnU7NvmiK6JTk",
+      "type": "arrow",
+      "x": 132.11978039407762,
+      "y": 1144.0579802281648,
+      "width": 102.89097861278589,
+      "height": 19.487511254036235,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "dashed",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0Q",
+      "roundness": null,
+      "seed": 1792647204,
+      "version": 876,
+      "versionNonce": 922899900,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774498971848,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          102.89097861278589,
+          -19.487511254036235
+        ]
+      ],
+      "lastCommittedPoint": null,
+      "startBinding": {
+        "elementId": "9joUOOdjIO_q0Xbmwkbfn",
+        "mode": "orbit",
+        "fixedPoint": [
+          1,
+          0.5001
+        ]
+      },
+      "endBinding": {
+        "elementId": "Hych69o26GpBDywIW-h0I",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.39488882030296474,
+          0.39488882030296435
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "KyQN0pFKzCuThC4G5exaS",
+      "type": "text",
+      "x": 78.91625540355139,
+      "y": 1120.127193044635,
+      "width": 75.93333435058594,
+      "height": 16.25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0R",
+      "roundness": null,
+      "seed": 645528484,
+      "version": 12,
+      "versionNonce": 1900278788,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774498971848,
+      "link": null,
+      "locked": false,
+      "text": "achieved via",
+      "fontSize": 13,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "YShQjvt9RnU7NvmiK6JTk",
+      "originalText": "achieved via",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "zHCW1zRz3qwBXdGq4x1xL",
+      "type": "rectangle",
+      "x": 1487.4622870676887,
+      "y": 171.10715671845588,
+      "width": 377.971537895062,
+      "height": 183.0515350066194,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "Pbi1FwUi8oErHIbA6Un0c"
+      ],
+      "frameId": null,
+      "index": "b0SV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1402915356,
+      "version": 1076,
+      "versionNonce": 514703499,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "cRZXRx9ejwqwtaR7DeHBv",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774325470838,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "nh6PlWuUsMiEw6RKu2Qr1",
+      "type": "text",
+      "x": 1517.5447115228346,
+      "y": 194.41997071464493,
+      "width": 310.1872351446926,
+      "height": 100,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "Pbi1FwUi8oErHIbA6Un0c"
+      ],
+      "frameId": null,
+      "index": "b0T",
+      "roundness": null,
+      "seed": 607664924,
+      "version": 1145,
+      "versionNonce": 1129929163,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "Discount Window\n\nEmergency lending facility for\nbanks. Lender of last resort.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Discount Window\n\nEmergency lending facility for banks. Lender of last resort.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Uz7EiHWVw5AGw6kLfHcEo",
+      "type": "rectangle",
+      "x": 2184.084167581461,
+      "y": 471.9355595083457,
+      "width": 366.72479424213964,
+      "height": 222.0673524504254,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "tTzKpRaHwiYNPnqiFoq_h"
+      ],
+      "frameId": null,
+      "index": "b0WV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1379729564,
+      "version": 915,
+      "versionNonce": 367489125,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "OFrzFF8LWgQUj_MuswFUc",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774325477538,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "QYVb4b2CUQpOUCoEcseQP",
+      "type": "text",
+      "x": 2217.125039121918,
+      "y": 505.8636709373418,
+      "width": 296.7401077000868,
+      "height": 125,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "tTzKpRaHwiYNPnqiFoq_h"
+      ],
+      "frameId": null,
+      "index": "b0X",
+      "roundness": null,
+      "seed": 1665803164,
+      "version": 954,
+      "versionNonce": 158882597,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325477539,
+      "link": null,
+      "locked": false,
+      "text": "U.S. Treasury\n\nIssues bonds at an auction.\nPurchased by primary dealer\ninstitutions.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "U.S. Treasury\n\nIssues bonds at an auction. Purchased by primary dealer institutions.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Jqz6X2xGF_2Ssj6mKbqGK",
+      "type": "rectangle",
+      "x": 1489.8054840294533,
+      "y": 421.7298340738329,
+      "width": 456.5860916370681,
+      "height": 324.5757107941731,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0X8",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1800064548,
+      "version": 1074,
+      "versionNonce": 1111615595,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "9-S2IvVNFfIEKc-_vWpyj",
+          "type": "arrow"
+        },
+        {
+          "id": "OFrzFF8LWgQUj_MuswFUc",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "0driMJb32MzM0vqGSz-Zg",
+      "type": "text",
+      "x": 1526.1850409163746,
+      "y": 453.7567662411859,
+      "width": 390.3486772925811,
+      "height": 125,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0XG",
+      "roundness": null,
+      "seed": 2053354396,
+      "version": 612,
+      "versionNonce": 483695691,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "Primary dealer institutions (24 banks)\n\nDesignated counterparties through\nwhich the NY Fed actually executes\nOMOs.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Primary dealer institutions (24 banks)\n\nDesignated counterparties through which the NY Fed actually executes OMOs.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "p_NUJ0ojfGHc8t1PypBwo",
+      "type": "rectangle",
+      "x": 1543.16398543613,
+      "y": 611.5492685299306,
+      "width": 126.73103066890963,
+      "height": 35,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0XV",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 270833572,
+      "version": 561,
+      "versionNonce": 3201771,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "4jAChFoKDzsWcSmKlo3NW"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "4jAChFoKDzsWcSmKlo3NW",
+      "type": "text",
+      "x": 1566.7628343582312,
+      "y": 616.5492685299306,
+      "width": 79.53333282470703,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0Xd",
+      "roundness": null,
+      "seed": 51706276,
+      "version": 515,
+      "versionNonce": 919356811,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "Goldman",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "p_NUJ0ojfGHc8t1PypBwo",
+      "originalText": "Goldman",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "2icSgwDsr_TEic9fLLoRI",
+      "type": "rectangle",
+      "x": 1691.5700186250808,
+      "y": 612.5432584275072,
+      "width": 164.54352441613582,
+      "height": 35,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0Xl",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1654514596,
+      "version": 556,
+      "versionNonce": 1742822443,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "wDqV9BcFmPij-pFyvA1pT"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "wDqV9BcFmPij-pFyvA1pT",
+      "type": "text",
+      "x": 1727.2084457196236,
+      "y": 617.5432584275072,
+      "width": 93.26667022705078,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0Y",
+      "roundness": null,
+      "seed": 1259492260,
+      "version": 503,
+      "versionNonce": 1868209867,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "JPMorgan",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "2icSgwDsr_TEic9fLLoRI",
+      "originalText": "JPMorgan",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "QtjIZ39erHEqy90aD5V99",
+      "type": "rectangle",
+      "x": 1543.5912341812912,
+      "y": 669.3053445715138,
+      "width": 164.54352441613582,
+      "height": 35,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0YG",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 778165156,
+      "version": 670,
+      "versionNonce": 1204981099,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "D3nQANNU7SP3VlX8uz6pA"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "D3nQANNU7SP3VlX8uz6pA",
+      "type": "text",
+      "x": 1584.5796635646518,
+      "y": 674.3053445715138,
+      "width": 82.56666564941406,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0YV",
+      "roundness": null,
+      "seed": 1416546084,
+      "version": 626,
+      "versionNonce": 882092043,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "Barclays",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "QtjIZ39erHEqy90aD5V99",
+      "originalText": "Barclays",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "G5cfDT6FfFDG3CgLpqIY6",
+      "type": "rectangle",
+      "x": 1736.8901335569883,
+      "y": 669.2485913459706,
+      "width": 118.76241996855286,
+      "height": 35,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0Z",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 473603364,
+      "version": 589,
+      "versionNonce": 731410091,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "YeJPANQP0zHmV_o8JxHeP"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "YeJPANQP0zHmV_o8JxHeP",
+      "type": "text",
+      "x": 1788.0713437319994,
+      "y": 674.2485913459706,
+      "width": 16.399999618530273,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "dk85aavDJQ5hQ4MVpt-pZ"
+      ],
+      "frameId": null,
+      "index": "b0a",
+      "roundness": null,
+      "seed": 833269788,
+      "version": 529,
+      "versionNonce": 2139840843,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "text": "...",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "G5cfDT6FfFDG3CgLpqIY6",
+      "originalText": "...",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "cRZXRx9ejwqwtaR7DeHBv",
+      "type": "arrow",
+      "x": 1128.3462710064925,
+      "y": 261.2190924178665,
+      "width": 353.1160160611962,
+      "height": 1.4082092533706714,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0j",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 177941276,
+      "version": 659,
+      "versionNonce": 1809545003,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "nonETqfyLYO2T40y7uM-5"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          353.1160160611962,
+          1.4082092533706714
+        ]
+      ],
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.8708305968143462,
+          0.12916940318565362
+        ]
+      },
+      "endBinding": {
+        "elementId": "zHCW1zRz3qwBXdGq4x1xL",
+        "mode": "orbit",
+        "fixedPoint": [
+          0,
+          0.5001
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "nonETqfyLYO2T40y7uM-5",
+      "type": "text",
+      "x": 1356.3913629530114,
+      "y": 247.6082690691111,
+      "width": 59.900001525878906,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0jV",
+      "roundness": null,
+      "seed": 264333739,
+      "version": 8,
+      "versionNonce": 684510891,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774324240769,
+      "link": null,
+      "locked": false,
+      "text": "offers",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "cRZXRx9ejwqwtaR7DeHBv",
+      "originalText": "offers",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "9-S2IvVNFfIEKc-_vWpyj",
+      "type": "arrow",
+      "x": 1128.3462710064925,
+      "y": 582.2794355228418,
+      "width": 355.45921302296074,
+      "height": 1.6131652082783603,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0l",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1650358052,
+      "version": 698,
+      "versionNonce": 2120196875,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "yxlr24UcDX1_LmrrbVx12"
+        }
+      ],
+      "updated": 1774325470839,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          355.45921302296074,
+          1.6131652082783603
+        ]
+      ],
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.8221050418758172,
+          0.8221050418758173
+        ]
+      },
+      "endBinding": {
+        "elementId": "Jqz6X2xGF_2Ssj6mKbqGK",
+        "mode": "orbit",
+        "fixedPoint": [
+          -0.007395010101141176,
+          0.49965129111011386
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false,
+      "fixedSegments": null,
+      "startIsSpecial": null,
+      "endIsSpecial": null
+    },
+    {
+      "id": "yxlr24UcDX1_LmrrbVx12",
+      "type": "text",
+      "x": 1412.1413563525048,
+      "y": 575.6886440523446,
+      "width": 112.86666870117188,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0lV",
+      "roundness": null,
+      "seed": 1644471941,
+      "version": 13,
+      "versionNonce": 550338149,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774324250089,
+      "link": null,
+      "locked": false,
+      "text": "trades with",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "9-S2IvVNFfIEKc-_vWpyj",
+      "originalText": "trades with",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "OFrzFF8LWgQUj_MuswFUc",
+      "type": "arrow",
+      "x": 1945.7681953125668,
+      "y": 583.9453592358866,
+      "width": 232.31597226889403,
+      "height": 0.9299003297960553,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0n",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1276726564,
+      "version": 1418,
+      "versionNonce": 314973125,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "cLObQn5S0-W5OWt_TFilL"
+        }
+      ],
+      "updated": 1774325477539,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          232.31597226889403,
+          -0.9299003297960553
+        ]
+      ],
+      "startBinding": {
+        "elementId": "Jqz6X2xGF_2Ssj6mKbqGK",
+        "mode": "inside",
+        "fixedPoint": [
+          0.998634692634374,
+          0.49977715450470445
+        ]
+      },
+      "endBinding": {
+        "elementId": "Uz7EiHWVw5AGw6kLfHcEo",
+        "mode": "orbit",
+        "fixedPoint": [
+          0,
+          0.5001
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "cLObQn5S0-W5OWt_TFilL",
+      "type": "text",
+      "x": 2189.6779608898987,
+      "y": 575.6051674623803,
+      "width": 146.76666259765625,
+      "height": 25,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b0nV",
+      "roundness": null,
+      "seed": 1511989227,
+      "version": 16,
+      "versionNonce": 1097624043,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774324262392,
+      "link": null,
+      "locked": false,
+      "text": "purchases from",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "OFrzFF8LWgQUj_MuswFUc",
+      "originalText": "purchases from",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "2MF5R4jPWLYZSQWgPGMTm",
+      "type": "rectangle",
+      "x": 1078.363748002897,
+      "y": 842.1949725664333,
+      "width": 327.9004300078545,
+      "height": 581.9659715654341,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "qBHilcgKHRD58jdxAiVr-"
+      ],
+      "frameId": null,
+      "index": "b0nl",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1268091539,
+      "version": 1113,
+      "versionNonce": 1462140164,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "Ip8qtuUdfK2LqmAflxzeK",
+          "type": "arrow"
+        },
+        {
+          "id": "FZEYdqKDuc8YJm71Ut2MR",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1774499069916,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "B5pWBaASmuE8rvy_R4mgT",
+      "type": "text",
+      "x": 1106.4809747150957,
+      "y": 875.7950126031349,
+      "width": 268.7186399269593,
+      "height": 208.12817241226978,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "qBHilcgKHRD58jdxAiVr-"
+      ],
+      "frameId": null,
+      "index": "b0o",
+      "roundness": null,
+      "seed": 799864659,
+      "version": 930,
+      "versionNonce": 890685444,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774499075016,
+      "link": null,
+      "locked": false,
+      "text": "3. Forward Guidance\n\nIssuing statements\n& press conferences.\nAffects consumer and\nbusiness confidence /\nexpectations",
+      "fontSize": 23.786076847116547,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "3. Forward Guidance\n\nIssuing statements\n& press conferences. Affects consumer and business confidence / expectations",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "Ip8qtuUdfK2LqmAflxzeK",
+      "type": "arrow",
+      "x": 916.472247331796,
+      "y": 670.0109068939553,
+      "width": 314.5189425497889,
+      "height": 166.18406567247803,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b18",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1026272115,
+      "version": 1147,
+      "versionNonce": 853032068,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1774499069917,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          314.5189425497889,
+          166.18406567247803
+        ]
+      ],
+      "startBinding": {
+        "elementId": "GelHb_kBfKT0sNwSwaU6-",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.47404917827113036,
+          0.7954374105351764
+        ]
+      },
+      "endBinding": {
+        "elementId": "2MF5R4jPWLYZSQWgPGMTm",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "XCJbuk35eJe4tRhshiXhq",
+      "type": "rectangle",
+      "x": -353.0067179311193,
+      "y": 1729.7043457551674,
+      "width": 2171.794921809922,
+      "height": 574.1408077746376,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD"
+      ],
+      "frameId": null,
+      "index": "b18G",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1855230995,
+      "version": 738,
+      "versionNonce": 828265155,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "FZEYdqKDuc8YJm71Ut2MR",
+          "type": "arrow"
+        },
+        {
+          "id": "CcWg3Q6OYagwSjuotr-s6",
+          "type": "arrow"
+        },
+        {
+          "id": "ggsZnFJA-vIyf7pq3mnLf",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1776141504085,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "dvrjd27cFnPgUud3mHH0G",
+      "type": "text",
+      "x": 564.0863883684946,
+      "y": 1737.946000442158,
+      "width": 369.0473227806026,
+      "height": 46.07715772611933,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#e7f5ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD"
+      ],
+      "frameId": null,
+      "index": "b18V",
+      "roundness": null,
+      "seed": 2032271923,
+      "version": 636,
+      "versionNonce": 59954531,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141483804,
+      "link": null,
+      "locked": false,
+      "text": "Downstream Effects",
+      "fontSize": 36.8617261808955,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Downstream Effects",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "f6Qq93iMn0GiXO8y6ohPB",
+      "type": "text",
+      "x": -319.81097599711325,
+      "y": 2144.2473332270583,
+      "width": 1324.6251612723343,
+      "height": 140.0277476626484,
+      "angle": 0,
+      "strokeColor": "#e03131",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD"
+      ],
+      "frameId": null,
+      "index": "b1A",
+      "roundness": null,
+      "seed": 504434245,
+      "version": 625,
+      "versionNonce": 780635107,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141483804,
+      "link": null,
+      "locked": false,
+      "text": "UNEMPLOYMENT. High rates → borrowing gets expensive → businesses invest less and hire less → unemployment rises\n\nINFLATION. High rates → less money circulating, asset prices fall, consumers feel poorer and spend less → inflation falls\n\nReverse for low rates",
+      "fontSize": 22.404439626023752,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "UNEMPLOYMENT. High rates → borrowing gets expensive → businesses invest less and hire less → unemployment rises\n\nINFLATION. High rates → less money circulating, asset prices fall, consumers feel poorer and spend less → inflation falls\n\nReverse for low rates",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "CcWg3Q6OYagwSjuotr-s6",
+      "type": "arrow",
+      "x": 144.8037555489032,
+      "y": 1432.2564832901026,
+      "width": 588.3041669171196,
+      "height": 290.48447826390316,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b1G",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 221891883,
+      "version": 729,
+      "versionNonce": 221823523,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141483803,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          588.3041669171196,
+          290.48447826390316
+        ]
+      ],
+      "startBinding": {
+        "elementId": "9joUOOdjIO_q0Xbmwkbfn",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.4998048785626675,
+          1.0123920460733802
+        ]
+      },
+      "endBinding": {
+        "elementId": "XCJbuk35eJe4tRhshiXhq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          -0.012128356157353836
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "fixedSegments": null,
+      "startIsSpecial": null,
+      "endIsSpecial": null,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "3ulFxb10XCegtWfgsovBZ",
+      "type": "arrow",
+      "x": 508.479673590599,
+      "y": 1450.0171409865927,
+      "width": 226.79387604105074,
+      "height": 184.3934316288346,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b1H",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1198203173,
+      "version": 327,
+      "versionNonce": 880020868,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499015411,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          226.79387604105074,
+          184.3934316288346
+        ]
+      ],
+      "startBinding": null,
+      "endBinding": {
+        "elementId": "XCJbuk35eJe4tRhshiXhq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          -0.012128356157353836
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "fixedSegments": null,
+      "startIsSpecial": null,
+      "endIsSpecial": null,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "ggsZnFJA-vIyf7pq3mnLf",
+      "type": "arrow",
+      "x": 735.2566346143265,
+      "y": 1432.185768410099,
+      "width": 2.105379483147658,
+      "height": 291.5185773450685,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b1I",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 797812165,
+      "version": 614,
+      "versionNonce": 700614083,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141483804,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -2.105379483147658,
+          291.5185773450685
+        ]
+      ],
+      "startBinding": {
+        "elementId": "pvuvzCJ0ZC8Loh3wFOidl",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          1.0000000000000002
+        ]
+      },
+      "endBinding": {
+        "elementId": "XCJbuk35eJe4tRhshiXhq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "FZEYdqKDuc8YJm71Ut2MR",
+      "type": "arrow",
+      "x": 1232.3467564298037,
+      "y": 1430.1609441318674,
+      "width": 489.23883734375977,
+      "height": 293.5434016232998,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b1J",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1123524235,
+      "version": 838,
+      "versionNonce": 383191683,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141483803,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -489.23883734375977,
+          293.5434016232998
+        ]
+      ],
+      "startBinding": {
+        "elementId": "2MF5R4jPWLYZSQWgPGMTm",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0.9999999999999998
+        ]
+      },
+      "endBinding": {
+        "elementId": "XCJbuk35eJe4tRhshiXhq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.5001,
+          0
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false,
+      "moveMidPointsWithElement": false
+    },
+    {
+      "id": "A90teNQkhHDPqBEh_6ydD",
+      "type": "arrow",
+      "x": -633.7881893587796,
+      "y": 1148.4299567885519,
+      "width": 0,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b1O",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1204485252,
+      "version": 8,
+      "versionNonce": 270309645,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1776141375524,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "startBinding": {
+        "elementId": "tFoNtdxi4i7gsA_uQnkJL",
+        "mode": "inside",
+        "fixedPoint": [
+          0.4787589867116361,
+          0.016619937249046254
+        ]
+      },
+      "endBinding": {
+        "elementId": "tFoNtdxi4i7gsA_uQnkJL",
+        "mode": "inside",
+        "fixedPoint": [
+          0.4787589867116361,
+          0.016619937249046254
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "GN1Y3idjsFMAWtyDBckOj",
+      "type": "rectangle",
+      "x": -983.6509362363473,
+      "y": 1756.7773807880205,
+      "width": 535.137829167471,
+      "height": 595.9350896309993,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "os5edENICglk027MLPzfq"
+      ],
+      "frameId": null,
+      "index": "b1P",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1803297924,
+      "version": 1222,
+      "versionNonce": 418882620,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499355197,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "rQ3jPzWg996Pn-s_DROIg",
+      "type": "text",
+      "x": -952.7207969131742,
+      "y": 1784.8530786835975,
+      "width": 460.3497326121356,
+      "height": 84.87371454104603,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "os5edENICglk027MLPzfq"
+      ],
+      "frameId": null,
+      "index": "b1Q",
+      "roundness": null,
+      "seed": 218952708,
+      "version": 1565,
+      "versionNonce": 1324404100,
+      "isDeleted": true,
+      "boundElements": [],
+      "updated": 1774499355197,
+      "link": null,
+      "locked": false,
+      "text": "C) Overnight Reverse Repos\n\n",
+      "fontSize": 22.63299054427894,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "C) Overnight Reverse Repos\n\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "INh49WuMDN8EO7hVlULdr",
+      "type": "rectangle",
+      "x": 1531.3251235256314,
+      "y": 879.5472556543548,
+      "width": 376.47097593846007,
+      "height": 419.24202058072996,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4mJ2vvtsJq1U6I_9xmmA0",
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1R",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1260003004,
+      "version": 1891,
+      "versionNonce": 2068776813,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "Gtwn9aD7PFZ7vyjiU-3hx",
+      "type": "text",
+      "x": 1553.084563995431,
+      "y": 899.298588508817,
+      "width": 323.8573385460723,
+      "height": 378.1563550306818,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4mJ2vvtsJq1U6I_9xmmA0",
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1S",
+      "roundness": null,
+      "seed": 1549723452,
+      "version": 2170,
+      "versionNonce": 204837325,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false,
+      "text": "A) Open Market Operations (OMO)\n\nBuying/selling Treasury securities to\nmanage short-term rates. Primarily\nshort-term U.S. Treasuries (T-bills). The\nNY Fed's trading desk executes these\ndaily.\n\nBUY bonds\n- injects cash into banking system\n- higher demand for bonds\n- bond prices rise, bond yields fall\n- rates fall\n\nSELL bonds\n- pulls cash out of banking system\n- higher supply of bonds\n- bond prices fall, bond yields rise\n- rates rise",
+      "fontSize": 15.922372843397131,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "A) Open Market Operations (OMO)\n\nBuying/selling Treasury securities to manage short-term rates. Primarily short-term U.S. Treasuries (T-bills). The NY Fed's trading desk executes these daily.\n\nBUY bonds\n- injects cash into banking system\n- higher demand for bonds\n- bond prices rise, bond yields fall\n- rates fall\n\nSELL bonds\n- pulls cash out of banking system\n- higher supply of bonds\n- bond prices fall, bond yields rise\n- rates rise",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "kVDe2oCuFDtG36WQ_-5BB",
+      "type": "rectangle",
+      "x": 1532.5090422627943,
+      "y": 1330.3080996660988,
+      "width": 734.1328034327661,
+      "height": 332.5209411303761,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1T",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 2057611396,
+      "version": 2601,
+      "versionNonce": 681300013,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "tFoNtdxi4i7gsA_uQnkJL",
+      "type": "text",
+      "x": 1554.2684827325938,
+      "y": 1350.0594325205611,
+      "width": 710.3854845853263,
+      "height": 258.73855870520333,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1U",
+      "roundness": null,
+      "seed": 746911748,
+      "version": 3382,
+      "versionNonce": 778781325,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false,
+      "text": "B) Interest on Reserve Balances (IORB) and Overnight Reverse Repos (ON RRP)\n\nIORB = Commercial banks earn interest on reserve balances they already hold at the Fed\nON RRP = The Fed sells a bond and buys it back the next day with added interest.\nTypically sell to non-banks like Money Market Funds.\n\nDiscount Window rate  ←  ceiling  (banks borrow from Fed instead if EFFR exceeds this)\n        |\n    EFFR floats here\n        |\nIORB rate             ←  floor for banks\nON RRP rate           ←  floor for non-banks\n",
+      "fontSize": 15.92237284339713,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "B) Interest on Reserve Balances (IORB) and Overnight Reverse Repos (ON RRP)\n\nIORB = Commercial banks earn interest on reserve balances they already hold at the Fed\nON RRP = The Fed sells a bond and buys it back the next day with added interest. Typically sell to non-banks like Money Market Funds.\n\nDiscount Window rate  ←  ceiling  (banks borrow from Fed instead if EFFR exceeds this)\n        |\n    EFFR floats here\n        |\nIORB rate             ←  floor for banks\nON RRP rate           ←  floor for non-banks\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "oVQAuUoPZD0tZL4_kooV_",
+      "type": "rectangle",
+      "x": 1491.5389387131313,
+      "y": 781.272455948044,
+      "width": 804.1238683944488,
+      "height": 913.5376116561545,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1V",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 76098308,
+      "version": 719,
+      "versionNonce": 39676141,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "LjyJQYjr_2LJA2bN8bRYi",
+      "type": "text",
+      "x": 1681.1911426097452,
+      "y": 802.0469552750736,
+      "width": 433.90253218129766,
+      "height": 33.25773217020209,
+      "angle": 0,
+      "strokeColor": "#846358",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "P1vscvoACG5iCgGEnvgQz"
+      ],
+      "frameId": null,
+      "index": "b1W",
+      "roundness": null,
+      "seed": 738307716,
+      "version": 502,
+      "versionNonce": 905691981,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141472985,
+      "link": null,
+      "locked": false,
+      "text": "ADDITIONAL REFERENCE INFO",
+      "fontSize": 26.606185736161677,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "ADDITIONAL REFERENCE INFO",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "mlTfWSGEycJfrsBLwXLng",
+      "type": "text",
+      "x": -303.5487996570961,
+      "y": 1800.2814537682532,
+      "width": 651.9136407492846,
+      "height": 230.8579132410986,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD",
+        "OCCKUGd9FCNOd89rYoI78"
+      ],
+      "frameId": null,
+      "index": "b1X",
+      "roundness": null,
+      "seed": 771574515,
+      "version": 1028,
+      "versionNonce": 56535501,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141518219,
+      "link": null,
+      "locked": false,
+      "text": "1. Short term borrowing costs\n\nThese rates follow the FFR.\n\nIt affects retail loans like credit cards, auto loans,\nHELOCs, and business loans. Retail loans often use the\nPrime Rate (FFR + 3%) and add an additional spread on\ntop of that.",
+      "fontSize": 23.08579132410986,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "1. Short term borrowing costs\n\nThese rates follow the FFR.\n\nIt affects retail loans like credit cards, auto loans, HELOCs, and business loans. Retail loans often use the Prime Rate (FFR + 3%) and add an additional spread on top of that.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "ZvsGpYOmvkmXpsmcOzJcd",
+      "type": "rectangle",
+      "x": -324.89525973606897,
+      "y": 1783.6103100619885,
+      "width": 666.6358038979677,
+      "height": 271.5923645510238,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "OCCKUGd9FCNOd89rYoI78"
+      ],
+      "frameId": null,
+      "index": "b1Y",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 115673421,
+      "version": 83,
+      "versionNonce": 1720935811,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1776141518219,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "AcgdCymlbAkZvcka8hd_e",
+      "type": "text",
+      "x": 394.74431041469916,
+      "y": 1798.2035605984945,
+      "width": 629.1800600702214,
+      "height": 291.4654720717075,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD",
+        "5tLAYNdXNCTDNbOxr0DPc"
+      ],
+      "frameId": null,
+      "index": "b1Z",
+      "roundness": null,
+      "seed": 2084608509,
+      "version": 1180,
+      "versionNonce": 329506915,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141568782,
+      "link": null,
+      "locked": false,
+      "text": "2. Long term borrowing costs\n\nThese rates follow the 10-year Treasury yield.\n\nThis is not driven by the FFR, but rather by\nQE/QT and inflation expectations.\n\nIt affects mortgage rates & long term corporate\nbonds.",
+      "fontSize": 25.908041961929555,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "2. Long term borrowing costs\n\nThese rates follow the 10-year Treasury yield.\n\nThis is not driven by the FFR, but rather by QE/QT and inflation expectations.\n\nIt affects mortgage rates & long term corporate bonds.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "22oXyaHUesCk9vEnfmx3Y",
+      "type": "rectangle",
+      "x": 365.94692837284623,
+      "y": 1784.1490464062938,
+      "width": 679.8951110673659,
+      "height": 315.6082734301697,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "5tLAYNdXNCTDNbOxr0DPc"
+      ],
+      "frameId": null,
+      "index": "b1a",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 271473293,
+      "version": 99,
+      "versionNonce": 1773132803,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1776141568782,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "0pVZFrdDdwkpfLk5LueZ_",
+      "type": "text",
+      "x": 1083.959166880685,
+      "y": 1805.5741678511347,
+      "width": 703.3532005002387,
+      "height": 270.44075440304397,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "4v2F6mInWCe75fA--RFAD",
+        "SPUVM-OZ5El2rFMB2MHR6"
+      ],
+      "frameId": null,
+      "index": "b1b",
+      "roundness": null,
+      "seed": 532612957,
+      "version": 870,
+      "versionNonce": 591419075,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1776141543205,
+      "link": null,
+      "locked": false,
+      "text": "3. The search for yield / asset prices\n\nLow rates → investors pile into equities, real estate,\ncorporate bonds, private equity → asset prices rise\n\nWhen Treasuries are not offering a high enough\nreturn, investors are pushed to invest in other\nriskier assets.",
+      "fontSize": 27.044075440304397,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "3. The search for yield / asset prices\n\nLow rates → investors pile into equities, real estate, corporate bonds, private equity → asset prices rise\n\nWhen Treasuries are not offering a high enough return, investors are pushed to invest in other riskier assets.",
+      "autoResize": false,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "rFoukCjeTcJkJc8wlh5z0",
+      "type": "rectangle",
+      "x": 1067.301013164359,
+      "y": 1783.6141171292936,
+      "width": 729.6435338283925,
+      "height": 320.9575662001725,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [
+        "SPUVM-OZ5El2rFMB2MHR6"
+      ],
+      "frameId": null,
+      "index": "b1c",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1364693741,
+      "version": 108,
+      "versionNonce": 1890036461,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1776141543205,
+      "link": null,
+      "locked": false
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff",
+    "lockedMultiSelections": {}
+  },
+  "files": {}
+}

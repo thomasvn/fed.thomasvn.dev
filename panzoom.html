@@ -1,0 +1,931 @@
+<!-- Attempt to draw a diagram of the Federal Reserve using panzoom library -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fed</title>
+    <script src="https://cdn.jsdelivr.net/npm/panzoom@9.4.3/dist/panzoom.min.js"></script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #e8eaed;
+        color: #111827;
+        font-size: 13px;
+        line-height: 1.5;
+        overflow: hidden;
+        height: 100dvh;
+      }
+
+      /* ── Canvas ── */
+      #canvas {
+        width: 100vw;
+        height: 100dvh;
+        overflow: hidden;
+        cursor: grab;
+        background-image: radial-gradient(circle, #b8bcc4 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+      #canvas:active {
+        cursor: grabbing;
+      }
+
+      /* ── Diagram (panzoom target) ── */
+      #diagram {
+        width: 1020px;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        user-select: none;
+      }
+
+      /* ── Flow connectors ── */
+      .flow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.4rem 0;
+        font-size: 0.65rem;
+        color: #9ca3af;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .flow::before,
+      .flow::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #c8ccd4;
+        max-width: 160px;
+      }
+
+      /* ── Base card ── */
+      .card {
+        background: #fff;
+        border: 1.5px solid #d1d5db;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition:
+          box-shadow 0.15s,
+          transform 0.1s;
+      }
+      .card:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14);
+        transform: translateY(-1px);
+      }
+      .card:active {
+        transform: translateY(0);
+      }
+
+      .card-head {
+        padding: 0.6rem 0.9rem;
+        font-weight: 600;
+        font-size: 0.77rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .card-head .more {
+        opacity: 0.55;
+        font-size: 0.65rem;
+        letter-spacing: 0.03em;
+      }
+      .card-body {
+        padding: 0.65rem 0.9rem;
+        border-top: 1px solid #e5e7eb;
+        font-size: 0.75rem;
+        color: #4b5563;
+      }
+      .card-body p {
+        margin-bottom: 0.25rem;
+      }
+      .card-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ── THE FED ── */
+      .fed {
+        border-color: #c0392b;
+        border-width: 2px;
+      }
+      .fed .card-head {
+        background: #c0392b;
+        color: #fff;
+        font-size: 1.15rem;
+        letter-spacing: 0.14em;
+        justify-content: center;
+        padding: 0.9rem 1rem;
+      }
+      .fed .card-body {
+        background: #fff5f5;
+        border-top-color: #fca5a5;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+        padding: 0.75rem 1rem;
+      }
+      .goal-label {
+        font-size: 0.63rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: #c0392b;
+        margin-bottom: 0.1rem;
+      }
+      .goal-val {
+        color: #555;
+        font-size: 0.75rem;
+      }
+
+      /* ── FOMC ── */
+      .fomc {
+        border-color: #1a2744;
+        border-width: 2px;
+      }
+      .fomc .card-head {
+        background: #1a2744;
+        color: #fff;
+      }
+      .fomc .card-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+      }
+      .fomc-group h4 {
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: #1a2744;
+        margin-bottom: 0.25rem;
+      }
+      .fomc-group ul {
+        padding-left: 1rem;
+        font-size: 0.72rem;
+      }
+      .fomc-group li {
+        margin-bottom: 0.1rem;
+      }
+      .banks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        margin-top: 0.3rem;
+      }
+      .bank {
+        background: #e5e7eb;
+        border-radius: 3px;
+        padding: 0.08rem 0.3rem;
+        font-size: 0.63rem;
+        color: #374151;
+      }
+      .bank.star {
+        background: #1a2744;
+        color: #fff;
+      }
+
+      /* ── Middle: tools + sidebar ── */
+      .middle {
+        display: grid;
+        grid-template-columns: 1fr 228px;
+        gap: 0.75rem;
+        align-items: start;
+      }
+      .tools {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+      }
+
+      /* ── Tools ── */
+      .tool {
+        border-color: #1d4ed8;
+      }
+      .tool .card-head {
+        background: #1d4ed8;
+        color: #fff;
+      }
+      .tool .card-body {
+        background: #eff6ff;
+        border-top-color: #bfdbfe;
+      }
+
+      /* ── Sidebar ── */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .conn {
+        border-color: #6d28d9;
+      }
+      .conn .card-head {
+        background: #6d28d9;
+        color: #fff;
+        font-size: 0.73rem;
+      }
+      .conn .card-body {
+        background: #f5f3ff;
+        border-top-color: #ddd6fe;
+      }
+
+      /* ── Downstream ── */
+      .ds-wrap {
+        border: 1.5px solid #b45309;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .ds-head {
+        background: #b45309;
+        color: #fff;
+        padding: 0.55rem 1rem;
+        font-weight: 600;
+        font-size: 0.77rem;
+        text-align: center;
+      }
+      .ds-body {
+        background: #fffbeb;
+        padding: 0.65rem;
+      }
+      .effects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.65rem;
+      }
+      .effect {
+        border-color: #d97706;
+      }
+      .effect .card-head {
+        background: #fff7ed;
+        color: #92400e;
+        font-size: 0.73rem;
+      }
+      .effect .card-body {
+        background: #fff;
+        border-top-color: #fde68a;
+      }
+
+      /* ── Toolbar ── */
+      #toolbar {
+        position: fixed;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 200;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        background: rgba(255, 255, 255, 0.93);
+        backdrop-filter: blur(10px);
+        border: 1px solid #d1d5db;
+        border-radius: 50px;
+        padding: 0.3rem 0.65rem;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+      }
+      #toolbar button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 1.05rem;
+        color: #374151;
+        line-height: 1;
+      }
+      #toolbar button:hover {
+        background: #f3f4f6;
+      }
+      #toolbar .sep {
+        width: 1px;
+        height: 1rem;
+        background: #e5e7eb;
+        margin: 0 0.15rem;
+      }
+      #toolbar .hint {
+        font-size: 0.67rem;
+        color: #9ca3af;
+        padding: 0 0.3rem;
+        letter-spacing: 0.02em;
+      }
+
+      /* ── Detail panel ── */
+      #panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 380px;
+        max-width: 100vw;
+        background: #fff;
+        border-left: 1px solid #e5e7eb;
+        box-shadow: -4px 0 28px rgba(0, 0, 0, 0.12);
+        transform: translateX(100%);
+        transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      #panel.open {
+        transform: translateX(0);
+      }
+
+      #panel-hd {
+        padding: 1rem 1.1rem 0.85rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.5rem;
+        flex-shrink: 0;
+        color: #fff;
+      }
+      #panel-title {
+        font-weight: 700;
+        font-size: 0.92rem;
+        line-height: 1.3;
+      }
+      #panel-close {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        line-height: 1;
+        padding: 0.15rem 0.4rem;
+        border-radius: 4px;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      #panel-close:hover {
+        background: rgba(255, 255, 255, 0.32);
+      }
+
+      #panel-body {
+        padding: 1rem 1.1rem;
+        overflow-y: auto;
+        flex: 1;
+        font-size: 0.8rem;
+        color: #374151;
+        line-height: 1.65;
+      }
+      #panel-body h3 {
+        font-size: 0.68rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--pc, #1a2744);
+        margin: 1rem 0 0.35rem;
+      }
+      #panel-body h3:first-child {
+        margin-top: 0;
+      }
+      #panel-body p {
+        margin-bottom: 0.55rem;
+      }
+      #panel-body ul {
+        padding-left: 1.1rem;
+        margin-bottom: 0.55rem;
+      }
+      #panel-body li {
+        margin-bottom: 0.28rem;
+      }
+      #panel-body strong {
+        color: #111;
+      }
+      #panel-body em {
+        font-style: italic;
+        color: #6b7280;
+      }
+
+      @media (max-width: 600px) {
+        #panel {
+          width: 100vw;
+          border-left: none;
+          box-shadow: 0 -4px 28px rgba(0, 0, 0, 0.15);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas">
+      <div id="diagram">
+        <!-- THE FED -->
+        <div class="card fed" data-node="fed">
+          <div class="card-head">THE FED</div>
+          <div class="card-body">
+            <div>
+              <div class="goal-label">Stable Inflation</div>
+              <div class="goal-val">target ~2%</div>
+            </div>
+            <div>
+              <div class="goal-label">Low Unemployment</div>
+              <div class="goal-val">maximize employment</div>
+            </div>
+            <div>
+              <div class="goal-label">Financial Stability</div>
+              <div class="goal-val">system-level resilience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow">governs</div>
+
+        <!-- FOMC -->
+        <div class="card fomc" data-node="fomc">
+          <div class="card-head">
+            Federal Open Market Committee (FOMC) — 12 voting members
+            <span class="more">tap to explore →</span>
+          </div>
+          <div class="card-body">
+            <div class="fomc-group">
+              <h4>Board of Governors (7 members)</h4>
+              <ul>
+                <li>Appointed by president; confirmed by senate</li>
+                <li>Includes Chair (Jerome Powell)</li>
+              </ul>
+            </div>
+            <div class="fomc-group">
+              <h4>Regional Bank Presidents (12 banks, 5 vote)</h4>
+              <div class="banks">
+                <span class="bank star">New York ★</span>
+                <span class="bank">Boston</span
+                ><span class="bank">Philadelphia</span>
+                <span class="bank">Cleveland</span
+                ><span class="bank">Richmond</span>
+                <span class="bank">Atlanta</span
+                ><span class="bank">Chicago</span>
+                <span class="bank">St. Louis</span
+                ><span class="bank">Minneapolis</span>
+                <span class="bank">Kansas City</span
+                ><span class="bank">Dallas</span>
+                <span class="bank">San Francisco</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow">performs</div>
+
+        <!-- Tools + Sidebar -->
+        <div class="middle">
+          <div class="tools">
+            <div class="card tool" data-node="ffr">
+              <div class="card-head">
+                1. Fed Funds Rate <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>Target range for overnight interbank lending rate.</p>
+                <p>Nudged via OMO, IORB, and ON RRP.</p>
+              </div>
+            </div>
+
+            <div class="card tool" data-node="qeqt">
+              <div class="card-head">
+                2. QE / QT <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>Large-scale asset purchases or balance-sheet runoff.</p>
+                <p>Used when FFR hits zero.</p>
+              </div>
+            </div>
+
+            <div class="card tool" data-node="guidance">
+              <div class="card-head">
+                3. Forward Guidance <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>
+                  Signals future policy path via statements & press conferences.
+                </p>
+                <p>Moves markets before any action is taken.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar">
+            <div class="card conn" data-node="discount">
+              <div class="card-head">
+                Discount Window <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>Emergency lending for banks. Lender of last resort.</p>
+              </div>
+            </div>
+            <div class="card conn" data-node="dealers">
+              <div class="card-head">
+                Primary Dealers (24) <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>NY Fed's counterparties for OMOs and Treasury auctions.</p>
+              </div>
+            </div>
+            <div class="card conn" data-node="treasury">
+              <div class="card-head">
+                U.S. Treasury <span class="more">→</span>
+              </div>
+              <div class="card-body">
+                <p>Issues bonds at auction; bought by primary dealers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow">downstream effects</div>
+
+        <!-- Downstream Effects -->
+        <div class="ds-wrap">
+          <div class="ds-head">Downstream Effects</div>
+          <div class="ds-body">
+            <div class="effects">
+              <div class="card effect" data-node="shortterm">
+                <div class="card-head">
+                  1. Short-term borrowing costs <span class="more">→</span>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Tracks FFR. Affects credit cards, auto loans, HELOCs,
+                    business credit lines.
+                  </p>
+                </div>
+              </div>
+              <div class="card effect" data-node="longterm">
+                <div class="card-head">
+                  2. Long-term borrowing costs <span class="more">→</span>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Tracks 10-year Treasury yield. Affects mortgages & corporate
+                    bonds.
+                  </p>
+                </div>
+              </div>
+              <div class="card effect" data-node="yield">
+                <div class="card-head">
+                  3. Search for yield / asset prices <span class="more">→</span>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Low rates push investors into riskier assets, inflating
+                    prices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toolbar -->
+    <div id="toolbar">
+      <button id="btn-in" title="Zoom in">+</button>
+      <button id="btn-out" title="Zoom out">−</button>
+      <button id="btn-reset" title="Reset view">↺</button>
+      <div class="sep"></div>
+      <div class="hint">scroll · drag · tap to explore</div>
+    </div>
+
+    <!-- Detail panel -->
+    <div id="panel">
+      <div id="panel-hd">
+        <div id="panel-title"></div>
+        <button id="panel-close">×</button>
+      </div>
+      <div id="panel-body"></div>
+    </div>
+
+    <script>
+      /* ── Node detail content ──────────────────────────────────────────────────
+     To add or update content: edit the NODES object below.
+     To add a new clickable card to the diagram: add data-node="id" to any
+     HTML element, then add a matching entry here.
+  ── */
+      const NODES = {
+        fed: {
+          title: "THE FED — Federal Reserve System",
+          color: "#c0392b",
+          html: `
+        <h3>What is it?</h3>
+        <p>The Federal Reserve is the central bank of the United States, created by the Federal Reserve Act of 1913. It operates as an independent agency — insulated from short-term political pressure to prevent inflationary policy before elections.</p>
+        <h3>Mandate (from Congress)</h3>
+        <ul>
+          <li><strong>Stable Inflation</strong> — target ~2% annual inflation, measured by PCE</li>
+          <li><strong>Maximum Employment</strong> — low and stable unemployment</li>
+          <li><strong>Financial Stability</strong> — prevent systemic bank panics and crises</li>
+        </ul>
+        <h3>Structure</h3>
+        <p>The Fed system consists of the Board of Governors (Washington D.C.), 12 regional Federal Reserve Banks, and the Federal Open Market Committee (FOMC) which sets monetary policy.</p>
+        <h3>Independence</h3>
+        <p>Board of Governors members serve 14-year terms, staggered to prevent rapid ideological shifts. The president nominates but cannot easily remove members, insulating monetary policy from election cycles — a feature by design.</p>
+      `,
+        },
+        fomc: {
+          title: "Federal Open Market Committee (FOMC)",
+          color: "#1a2744",
+          html: `
+        <h3>Role</h3>
+        <p>The FOMC votes on interest rate targets and asset purchase programs. It meets 8 times per year (roughly every 6 weeks) and releases a policy statement, economic projections, and a "dot plot" of each member's rate forecast.</p>
+        <h3>Board of Governors (7 members)</h3>
+        <ul>
+          <li>Appointed by the president; confirmed by the senate</li>
+          <li>Serve 14-year terms (staggered)</li>
+          <li>Includes the Chair (Jerome Powell) and Vice Chair for Supervision</li>
+          <li>All 7 vote at every FOMC meeting</li>
+        </ul>
+        <h3>Regional Bank Presidents</h3>
+        <ul>
+          <li>12 regional Federal Reserve Banks total</li>
+          <li>5 presidents vote at a time — seats rotate annually (except NY)</li>
+          <li><strong>New York Fed president always votes</strong> — NY runs the Fed's market operations desk and is central to financial markets</li>
+        </ul>
+        <h3>Decision process</h3>
+        <p>Decisions are made by majority vote. Dissents are noted in the public statement. The Chair sets tone and direction — speeches and press conferences are closely parsed by markets.</p>
+      `,
+        },
+        ffr: {
+          title: "Fed Funds Rate (FFR)",
+          color: "#1d4ed8",
+          html: `
+        <h3>What is it?</h3>
+        <p>The rate banks charge each other for overnight borrowing of reserve balances. The FOMC sets a <strong>target range</strong> (e.g. 5.25–5.50%) and uses three mechanisms to keep the Effective Federal Funds Rate (EFFR) inside it.</p>
+        <h3>OMO — Open Market Operations</h3>
+        <p>The NY Fed buys or sells Treasury securities in the open market, adding or draining reserves from the banking system. More reserves → rates fall; fewer reserves → rates rise. Conducted daily by the NY Fed's trading desk.</p>
+        <h3>IORB — Interest on Reserve Balances</h3>
+        <p>The interest the Fed pays banks on reserves parked overnight at the Fed. No bank will lend at a rate below what the Fed pays them to sit on reserves, so IORB sets an effective <em>ceiling</em>.</p>
+        <h3>ON RRP — Overnight Reverse Repos</h3>
+        <p>Non-bank institutions (money market funds, GSEs) can park cash at the Fed overnight via repo. This sets a <em>floor</em> — no institution will lend below this rate when they can get it risk-free from the Fed.</p>
+        <h3>Economic transmission</h3>
+        <ul>
+          <li><strong>↑ Rate</strong> → borrowing expensive → less business investment, less consumer spending → ↓ inflation, ↑ unemployment</li>
+          <li><strong>↓ Rate</strong> → borrowing cheap → more investment and spending → ↑ growth, ↓ unemployment</li>
+        </ul>
+      `,
+        },
+        qeqt: {
+          title: "Quantitative Easing / Tightening (QE / QT)",
+          color: "#1d4ed8",
+          html: `
+        <h3>Why use it?</h3>
+        <p>When the FFR hits zero (the "zero lower bound"), rate cuts run out of room. QE provides additional stimulus by operating directly on long-term interest rates rather than overnight rates.</p>
+        <h3>QE — Quantitative Easing</h3>
+        <p>The Fed purchases long-term Treasuries and mortgage-backed securities (MBS) from the open market via primary dealers.</p>
+        <ul>
+          <li>Increases demand for these bonds → raises prices → lowers yields</li>
+          <li>Lower long-term yields → cheaper mortgages and corporate bonds</li>
+          <li>Forces investors into riskier assets (the <em>portfolio balance effect</em>)</li>
+          <li>Expands the Fed's balance sheet</li>
+        </ul>
+        <h3>QT — Quantitative Tightening</h3>
+        <p>The Fed reduces its balance sheet by letting maturing bonds roll off without reinvesting, or actively selling.</p>
+        <ul>
+          <li>Drains reserves from the banking system</li>
+          <li>Puts upward pressure on long-term yields</li>
+          <li>Tightens financial conditions</li>
+        </ul>
+        <h3>Historical use</h3>
+        <ul>
+          <li><strong>2009 GFC</strong> — QE1→QE3 expanded the balance sheet from ~$900B to $4.5T</li>
+          <li><strong>2020 COVID-19</strong> — Unlimited QE expanded the balance sheet to ~$9T</li>
+          <li><strong>2022–present</strong> — QT ongoing, balance sheet declining toward ~$6.5T</li>
+        </ul>
+      `,
+        },
+        guidance: {
+          title: "Forward Guidance",
+          color: "#1d4ed8",
+          html: `
+        <h3>What is it?</h3>
+        <p>The Fed's use of public communications to signal the <em>expected future path</em> of monetary policy. Markets price in future expectations, so guidance can move markets before any rate action is taken.</p>
+        <h3>Key channels</h3>
+        <ul>
+          <li><strong>FOMC statements</strong> — released immediately after each meeting</li>
+          <li><strong>Chair press conferences</strong> — often more market-moving than the statement itself</li>
+          <li><strong>Meeting minutes</strong> — detailed notes published 3 weeks after each meeting</li>
+          <li><strong>Dot plot</strong> — each member's anonymous rate projection (released quarterly)</li>
+          <li><strong>Jackson Hole speech</strong> — annual keynote, often used to signal major policy shifts</li>
+        </ul>
+        <h3>Why it matters</h3>
+        <p>If the Fed credibly signals rates will stay high for longer, investors sell long-term bonds today — raising yields — without the Fed doing anything. Conversely, signaling rate cuts can stimulate the economy before rates actually fall.</p>
+        <p>This makes communication itself a policy tool, and why markets parse every word of Fed statements for nuance.</p>
+      `,
+        },
+        discount: {
+          title: "Discount Window",
+          color: "#6d28d9",
+          html: `
+        <h3>What is it?</h3>
+        <p>An emergency lending facility where any eligible depository institution can borrow directly from the Fed, using eligible collateral (Treasuries, MBS, loans).</p>
+        <h3>How it works</h3>
+        <ul>
+          <li>Banks borrow at the <strong>primary credit rate</strong> — historically set 0.5% above the FFR upper bound, to discourage routine use</li>
+          <li>Loans are typically overnight; term loans (up to 90 days) are available</li>
+          <li>Borrowing is anonymous to the public for 2 years</li>
+        </ul>
+        <h3>Stigma problem</h3>
+        <p>Banks historically avoided the discount window even in genuine need — fearing that borrowing would signal weakness to markets, triggering the very bank run they were trying to prevent. The Fed has worked to reduce this stigma, particularly after 2008.</p>
+        <h3>Lender of last resort</h3>
+        <p>During a crisis, solvent institutions may be unable to borrow from the private market due to panic. The discount window ensures liquidity is always available. Used heavily in the <strong>2008 GFC</strong> and <strong>2023 regional bank crisis</strong> (SVB, Signature, First Republic).</p>
+      `,
+        },
+        dealers: {
+          title: "Primary Dealers (24 banks)",
+          color: "#6d28d9",
+          html: `
+        <h3>What are they?</h3>
+        <p>Financial institutions designated by the NY Fed to serve as counterparties in open market operations and Treasury auctions. There are currently 24 primary dealers.</p>
+        <h3>Obligations</h3>
+        <ul>
+          <li>Must participate meaningfully in each Treasury auction — bid on new issuance</li>
+          <li>Must make markets in Treasuries, providing two-sided quotes to maintain liquidity</li>
+          <li>Serve as the NY Fed's counterparties when executing OMOs (buying/selling Treasuries to adjust reserves)</li>
+        </ul>
+        <h3>Why the structure exists</h3>
+        <p>The Fed is legally prohibited from buying Treasuries directly from the Treasury (direct monetization of debt). The primary dealer system creates an arms-length structure: the Treasury sells to dealers at auction, and the Fed can later buy from dealers on the secondary market (QE).</p>
+        <h3>Who they are</h3>
+        <p>Goldman Sachs, JPMorgan Chase, Citigroup, Bank of America, Morgan Stanley, Barclays Capital, BNP Paribas, Deutsche Bank, HSBC, Nomura, and 14 others.</p>
+      `,
+        },
+        treasury: {
+          title: "U.S. Treasury",
+          color: "#6d28d9",
+          html: `
+        <h3>Role</h3>
+        <p>The Treasury finances federal spending by issuing debt: T-bills (short-term), notes (medium-term), and bonds (long-term). This funds the gap between government revenues and expenditures.</p>
+        <h3>Treasury auctions</h3>
+        <ul>
+          <li>Regular auctions weekly (T-bills) and monthly (notes/bonds)</li>
+          <li>Primary dealers are required to submit competitive bids</li>
+          <li>Other institutions also participate (money market funds, foreign central banks)</li>
+          <li>Yields are set by auction demand — weak demand means higher yields</li>
+        </ul>
+        <h3>Fed / Treasury independence</h3>
+        <ul>
+          <li>The Fed <strong>cannot</strong> buy Treasuries directly from the Treasury — prohibited to prevent direct debt monetization</li>
+          <li>The Fed <strong>can</strong> buy Treasuries on the secondary market — this is how QE works</li>
+          <li>The Fed earns interest on its holdings and remits profits back to the Treasury annually</li>
+        </ul>
+        <h3>Coordination risks</h3>
+        <p>When the Treasury issues large volumes of debt and the Fed simultaneously buys it (QE), the practical distinction blurs. Critics argue this is indirect debt monetization — a central concern in <em>The Lords of Easy Money</em>.</p>
+      `,
+        },
+        shortterm: {
+          title: "Short-term Borrowing Costs",
+          color: "#b45309",
+          html: `
+        <h3>How it transmits</h3>
+        <p>Short-term rates move quickly with the FFR. When the FOMC raises its target, lenders reprice variable-rate products almost immediately.</p>
+        <h3>Affected products</h3>
+        <ul>
+          <li><strong>Credit cards</strong> — variable APR = prime rate + spread</li>
+          <li><strong>Auto loans</strong> — 3–5 year rates reprice at origination</li>
+          <li><strong>HELOCs</strong> — directly tied to prime; monthly payments move with FFR</li>
+          <li><strong>Business lines of credit</strong> — typically SOFR-based + credit spread</li>
+          <li><strong>Adjustable-rate mortgages</strong> — reset periodically to a benchmark</li>
+        </ul>
+        <h3>The prime rate</h3>
+        <p><strong>Prime rate = EFFR + 3%.</strong> When the Fed raised rates by 5.25pp in 2022–2023, the prime rate went from 3.25% to 8.5%, directly hitting credit card holders and HELOC borrowers.</p>
+        <h3>Economic effects</h3>
+        <ul>
+          <li><strong>High rates →</strong> borrowing expensive → businesses invest & hire less → ↑ unemployment</li>
+          <li><strong>High rates →</strong> consumer spending falls → ↓ demand → ↓ inflation</li>
+          <li><strong>Low rates →</strong> stimulative, but risks inflation if sustained too long</li>
+        </ul>
+      `,
+        },
+        longterm: {
+          title: "Long-term Borrowing Costs",
+          color: "#b45309",
+          html: `
+        <h3>Key insight</h3>
+        <p>Long-term rates are <strong>not</strong> directly set by the FFR. They track the <strong>10-year Treasury yield</strong>, which reflects market expectations of future inflation and growth.</p>
+        <h3>Affected products</h3>
+        <ul>
+          <li><strong>30-year mortgages</strong> — priced at the 10-year yield + ~170bps spread</li>
+          <li><strong>15-year mortgages</strong> — similar, shorter duration</li>
+          <li><strong>Long-term corporate bonds</strong> — investment-grade bonds price off Treasuries + credit spread</li>
+          <li><strong>Municipal bonds</strong> — state and local government debt</li>
+        </ul>
+        <h3>What moves the 10-year?</h3>
+        <ul>
+          <li><strong>Inflation expectations</strong> — markets demand higher yields to compensate for future inflation</li>
+          <li><strong>Real growth expectations</strong> — strong growth increases borrowing demand, pushing yields up</li>
+          <li><strong>QE/QT</strong> — the Fed buying Treasuries suppresses yields; selling raises them</li>
+          <li><strong>Forward guidance</strong> — credible inflation targets anchor long-term expectations</li>
+          <li><strong>Foreign demand</strong> — foreign central banks and sovereign wealth funds buying Treasuries compress yields</li>
+        </ul>
+        <h3>Why it matters (2022 example)</h3>
+        <p>The 30-year mortgage rate went from ~3% in early 2022 to ~8% by late 2023 — not from the FFR alone, but because long-term inflation expectations reset and QT reduced Fed Treasury holdings.</p>
+      `,
+        },
+        yield: {
+          title: "Search for Yield / Asset Prices",
+          color: "#b45309",
+          html: `
+        <h3>The core mechanism</h3>
+        <p>When risk-free returns (Treasuries) are low, investors reach for yield by taking on more risk. This demand flows into progressively riskier assets, pushing prices up across the risk spectrum.</p>
+        <h3>Portfolio balance effect</h3>
+        <p>QE's key transmission: by removing safe assets from the market and replacing them with reserves, the Fed forces investors into riskier alternatives to get returns. Capital flows into:</p>
+        <ul>
+          <li><strong>Equities</strong> — stocks attractive vs. near-zero bond yields; P/E ratios expand</li>
+          <li><strong>Real estate</strong> — cheap mortgages drive buying demand; prices rise</li>
+          <li><strong>Corporate bonds</strong> — investors accept lower credit spreads for income</li>
+          <li><strong>Private equity & VC</strong> — low rates justify long-horizon, illiquid bets</li>
+          <li><strong>Commodities, crypto</strong> — alternative stores of value and inflation hedges</li>
+        </ul>
+        <h3>The critique</h3>
+        <p>Asset price gains go disproportionately to those who already own assets. Those without equity or property portfolios face higher housing costs with no offsetting gains. This wealth inequality channel is a central critique of QE in <em>The Lords of Easy Money</em> by Christopher Leonard.</p>
+        <h3>Reversal</h3>
+        <p>When rates rise sharply (2022–2023), this dynamic reverses: safe assets become attractive again, capital flows back out of risk assets, and prices fall — particularly for long-duration growth stocks and speculative real estate.</p>
+      `,
+        },
+      };
+
+      /* ── Panzoom ── */
+      const diagram = document.getElementById("diagram");
+      const pz = panzoom(diagram, {
+        maxZoom: 4,
+        minZoom: 0.12,
+        zoomDoubleClickSpeed: 1,
+        smoothScroll: false,
+      });
+
+      function center() {
+        const vw = window.innerWidth;
+        const scale = pz.getTransform().scale;
+        pz.moveTo((vw - 1020 * scale) / 2, 40 * scale);
+      }
+
+      window.addEventListener("load", () => {
+        const fitScale = Math.min(1, (window.innerWidth - 32) / 1020);
+        if (fitScale < 1) {
+          pz.zoomAbs(0, 0, fitScale);
+        }
+        center();
+      });
+
+      document.getElementById("btn-in").addEventListener("click", () => {
+        const t = pz.getTransform();
+        pz.zoomAbs(
+          window.innerWidth / 2,
+          window.innerHeight / 2,
+          t.scale * 1.3,
+        );
+      });
+      document.getElementById("btn-out").addEventListener("click", () => {
+        const t = pz.getTransform();
+        pz.zoomAbs(
+          window.innerWidth / 2,
+          window.innerHeight / 2,
+          t.scale * 0.75,
+        );
+      });
+      document.getElementById("btn-reset").addEventListener("click", () => {
+        const fitScale = Math.min(1, (window.innerWidth - 32) / 1020);
+        pz.zoomAbs(0, 0, fitScale);
+        center();
+      });
+
+      /* ── Detail panel ── */
+      const panel = document.getElementById("panel");
+      const panelHd = document.getElementById("panel-hd");
+      const panelTitle = document.getElementById("panel-title");
+      const panelBody = document.getElementById("panel-body");
+
+      function openPanel(id) {
+        const n = NODES[id];
+        if (!n) return;
+        panelTitle.textContent = n.title;
+        panelHd.style.background = n.color;
+        panelBody.style.setProperty("--pc", n.color);
+        panelBody.innerHTML = n.html;
+        panelBody.scrollTop = 0;
+        panel.classList.add("open");
+      }
+
+      document
+        .getElementById("panel-close")
+        .addEventListener("click", () => panel.classList.remove("open"));
+
+      document.querySelectorAll("[data-node]").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openPanel(el.dataset.node);
+        });
+      });
+
+      document
+        .getElementById("canvas")
+        .addEventListener("click", () => panel.classList.remove("open"));
+    </script>
+  </body>
+</html>
