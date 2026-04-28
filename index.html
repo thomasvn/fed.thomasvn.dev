@@ -268,7 +268,7 @@
   <body>
     <main class="page">
       <section class="intro-pane">
-        <p class="eyebrow">Published April 13, 2026</p>
+        <p class="eyebrow" id="article-meta"></p>
         <h1>The Federal Reserve Architecture Diagram</h1>
         <p class="lede">
           I'm a visual learner, and recently I've taken an interest in the
@@ -339,10 +339,36 @@
       const loading = document.getElementById("loading");
       const loadingTitle = loading.querySelector("strong");
       const loadingText = loading.querySelector("span");
+      const articleMeta = document.getElementById("article-meta");
       const showError = (message, html = false) => {
         loadingTitle.textContent = "Could not load diagram";
         loadingText[html ? "innerHTML" : "textContent"] = message;
       };
+
+      (async () => {
+        try {
+          const res = await fetch(
+            "https://api.github.com/repos/thomasvn/fed.thomasvn.dev",
+          );
+          if (!res.ok) {
+            return;
+          }
+
+          const repo = await res.json();
+          const updated = repo?.pushed_at;
+          if (!updated) {
+            return;
+          }
+
+          const updatedLabel = new Intl.DateTimeFormat("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          }).format(new Date(updated));
+
+          articleMeta.textContent = `Updated on ${updatedLabel}`;
+        } catch {}
+      })();
 
       (async () => {
         try {
