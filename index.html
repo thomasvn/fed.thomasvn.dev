@@ -24,12 +24,13 @@
         --paper: #f6f0e7;
         --paper-deep: #efe5d7;
         --surface: #fffdf9;
-        --surface-strong: #fffaf2;
         --ink: #1f2937;
         --muted: #5f6c7b;
-        --line: #d8cdbc;
         --accent: #8f2d1e;
         --accent-soft: #f4dfd6;
+        --label-face:
+          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
+          Arial, sans-serif;
         --shadow: 0 18px 40px rgba(31, 41, 55, 0.1);
       }
 
@@ -91,14 +92,18 @@
         overflow: auto;
       }
 
-      .eyebrow {
-        font-family:
-          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
-          Arial, sans-serif;
-        font-size: 0.82rem;
+      .eyebrow,
+      .meta-label,
+      .badge,
+      #loading strong {
+        font-family: var(--label-face);
         font-weight: 700;
-        letter-spacing: 0.14em;
         text-transform: uppercase;
+      }
+
+      .eyebrow {
+        font-size: 0.82rem;
+        letter-spacing: 0.14em;
         color: var(--accent);
       }
 
@@ -143,13 +148,8 @@
       .meta-label {
         display: inline-block;
         margin-bottom: 0.45rem;
-        font-family:
-          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
-          Arial, sans-serif;
         font-size: 0.74rem;
-        font-weight: 700;
         letter-spacing: 0.12em;
-        text-transform: uppercase;
         color: var(--accent);
       }
 
@@ -201,40 +201,8 @@
         border-radius: 999px;
         background: var(--accent-soft);
         color: var(--accent);
-        font-family:
-          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
-          Arial, sans-serif;
         font-size: 0.76rem;
-        font-weight: 700;
         letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .header-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 0.55rem;
-      }
-
-      .header-links a {
-        padding: 0.42rem 0.72rem;
-        border: 1px solid rgba(31, 41, 55, 0.12);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.72);
-        color: var(--ink);
-        font-family:
-          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
-          Arial, sans-serif;
-        font-size: 0.76rem;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      .header-links a:hover {
-        background: #fff;
       }
 
       #root {
@@ -258,13 +226,8 @@
       }
 
       #loading strong {
-        font-family:
-          "Avenir Next Condensed", "Franklin Gothic Medium", "Arial Narrow",
-          Arial, sans-serif;
         font-size: 0.9rem;
-        font-weight: 700;
         letter-spacing: 0.12em;
-        text-transform: uppercase;
         color: var(--accent);
       }
 
@@ -355,7 +318,7 @@
       <section class="diagram-pane">
         <div class="diagram-shell">
           <div class="diagram-header">
-            <span class="badge">Live Excalidraw Embed</span>
+            <span class="badge">Excalidraw Viewer</span>
           </div>
 
           <div id="loading">
@@ -372,6 +335,15 @@
     </main>
 
     <script>
+      const root = document.getElementById("root");
+      const loading = document.getElementById("loading");
+      const loadingTitle = loading.querySelector("strong");
+      const loadingText = loading.querySelector("span");
+      const showError = (message, html = false) => {
+        loadingTitle.textContent = "Could not load diagram";
+        loadingText[html ? "innerHTML" : "textContent"] = message;
+      };
+
       (async () => {
         try {
           if (window.location.protocol === "file:") {
@@ -385,9 +357,7 @@
 
           const data = await res.json();
           const { Excalidraw } = ExcalidrawLib;
-          const reactRoot = ReactDOM.createRoot(
-            document.getElementById("root"),
-          );
+          const reactRoot = ReactDOM.createRoot(root);
 
           reactRoot.render(
             React.createElement(Excalidraw, {
@@ -407,23 +377,22 @@
             }),
           );
 
-          document.getElementById("loading").remove();
+          loading.remove();
         } catch (err) {
-          const el = document.getElementById("loading");
-          el.querySelector("strong").textContent = "Could not load diagram";
-
           if (
             err.message === "__SERVE_OVER_HTTP__" ||
             err.message.includes("fetch")
           ) {
-            el.querySelector("span").innerHTML =
+            showError(
               "Open this page over HTTP, not <code>file://</code>.<br>" +
-              "From this folder run <code>python3 -m http.server 8000</code>, then visit " +
-              "<code>http://127.0.0.1:8000/index.html</code>.";
+                "From this folder run <code>python3 -m http.server 8000</code>, then visit " +
+                "<code>http://127.0.0.1:8000/index.html</code>.",
+              true,
+            );
             return;
           }
 
-          el.querySelector("span").textContent = err.message;
+          showError(err.message);
         }
       })();
     </script>

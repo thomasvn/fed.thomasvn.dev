@@ -72,8 +72,13 @@
 
       /* ── Base card ── */
       .card {
+        --card-border: #d1d5db;
+        --card-head-bg: #fff;
+        --card-head-color: #111827;
+        --card-body-bg: #fff;
+        --card-body-border: #e5e7eb;
         background: #fff;
-        border: 1.5px solid #d1d5db;
+        border: 1.5px solid var(--card-border);
         border-radius: 8px;
         overflow: hidden;
         cursor: pointer;
@@ -91,11 +96,13 @@
 
       .card-head {
         padding: 0.6rem 0.9rem;
-        font-weight: 600;
-        font-size: 0.77rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        background: var(--card-head-bg);
+        color: var(--card-head-color);
+        font-size: 0.77rem;
+        font-weight: 600;
       }
       .card-head .more {
         opacity: 0.55;
@@ -104,7 +111,8 @@
       }
       .card-body {
         padding: 0.65rem 0.9rem;
-        border-top: 1px solid #e5e7eb;
+        border-top: 1px solid var(--card-body-border);
+        background: var(--card-body-bg);
         font-size: 0.75rem;
         color: #4b5563;
       }
@@ -117,20 +125,20 @@
 
       /* ── THE FED ── */
       .fed {
-        border-color: #c0392b;
+        --card-border: #c0392b;
+        --card-head-bg: #c0392b;
+        --card-head-color: #fff;
+        --card-body-bg: #fff5f5;
+        --card-body-border: #fca5a5;
         border-width: 2px;
       }
       .fed .card-head {
-        background: #c0392b;
-        color: #fff;
         font-size: 1.15rem;
         letter-spacing: 0.14em;
         justify-content: center;
         padding: 0.9rem 1rem;
       }
       .fed .card-body {
-        background: #fff5f5;
-        border-top-color: #fca5a5;
         display: flex;
         justify-content: center;
         gap: 2.5rem;
@@ -152,12 +160,10 @@
 
       /* ── FOMC ── */
       .fomc {
-        border-color: #1a2744;
+        --card-border: #1a2744;
+        --card-head-bg: #1a2744;
+        --card-head-color: #fff;
         border-width: 2px;
-      }
-      .fomc .card-head {
-        background: #1a2744;
-        color: #fff;
       }
       .fomc .card-body {
         display: grid;
@@ -210,15 +216,11 @@
 
       /* ── Tools ── */
       .tool {
-        border-color: #1d4ed8;
-      }
-      .tool .card-head {
-        background: #1d4ed8;
-        color: #fff;
-      }
-      .tool .card-body {
-        background: #eff6ff;
-        border-top-color: #bfdbfe;
+        --card-border: #1d4ed8;
+        --card-head-bg: #1d4ed8;
+        --card-head-color: #fff;
+        --card-body-bg: #eff6ff;
+        --card-body-border: #bfdbfe;
       }
 
       /* ── Sidebar ── */
@@ -228,16 +230,14 @@
         gap: 0.75rem;
       }
       .conn {
-        border-color: #6d28d9;
+        --card-border: #6d28d9;
+        --card-head-bg: #6d28d9;
+        --card-head-color: #fff;
+        --card-body-bg: #f5f3ff;
+        --card-body-border: #ddd6fe;
       }
       .conn .card-head {
-        background: #6d28d9;
-        color: #fff;
         font-size: 0.73rem;
-      }
-      .conn .card-body {
-        background: #f5f3ff;
-        border-top-color: #ddd6fe;
       }
 
       /* ── Downstream ── */
@@ -264,16 +264,13 @@
         gap: 0.65rem;
       }
       .effect {
-        border-color: #d97706;
+        --card-border: #d97706;
+        --card-head-bg: #fff7ed;
+        --card-head-color: #92400e;
+        --card-body-border: #fde68a;
       }
       .effect .card-head {
-        background: #fff7ed;
-        color: #92400e;
         font-size: 0.73rem;
-      }
-      .effect .card-body {
-        background: #fff;
-        border-top-color: #fde68a;
       }
 
       /* ── Toolbar ── */
@@ -851,7 +848,13 @@
       };
 
       /* ── Panzoom ── */
+      const DIAGRAM_WIDTH = 1020;
       const diagram = document.getElementById("diagram");
+      const canvas = document.getElementById("canvas");
+      const panel = document.getElementById("panel");
+      const panelHd = document.getElementById("panel-hd");
+      const panelTitle = document.getElementById("panel-title");
+      const panelBody = document.getElementById("panel-body");
       const pz = panzoom(diagram, {
         maxZoom: 4,
         minZoom: 0.12,
@@ -860,72 +863,65 @@
       });
 
       function center() {
-        const vw = window.innerWidth;
-        const scale = pz.getTransform().scale;
-        pz.moveTo((vw - 1020 * scale) / 2, 40 * scale);
+        const { scale } = pz.getTransform();
+        pz.moveTo((window.innerWidth - DIAGRAM_WIDTH * scale) / 2, 40 * scale);
       }
 
-      window.addEventListener("load", () => {
-        const fitScale = Math.min(1, (window.innerWidth - 32) / 1020);
-        if (fitScale < 1) {
-          pz.zoomAbs(0, 0, fitScale);
-        }
-        center();
-      });
+      function fitScale() {
+        return Math.min(1, (window.innerWidth - 32) / DIAGRAM_WIDTH);
+      }
 
-      document.getElementById("btn-in").addEventListener("click", () => {
-        const t = pz.getTransform();
+      function zoomBy(factor) {
+        const { scale } = pz.getTransform();
         pz.zoomAbs(
           window.innerWidth / 2,
           window.innerHeight / 2,
-          t.scale * 1.3,
+          scale * factor,
         );
-      });
-      document.getElementById("btn-out").addEventListener("click", () => {
-        const t = pz.getTransform();
-        pz.zoomAbs(
-          window.innerWidth / 2,
-          window.innerHeight / 2,
-          t.scale * 0.75,
-        );
-      });
-      document.getElementById("btn-reset").addEventListener("click", () => {
-        const fitScale = Math.min(1, (window.innerWidth - 32) / 1020);
-        pz.zoomAbs(0, 0, fitScale);
+      }
+
+      function resetView() {
+        pz.zoomAbs(0, 0, fitScale());
         center();
-      });
+      }
+
+      function closePanel() {
+        panel.classList.remove("open");
+      }
+
+      window.addEventListener("load", resetView);
+
+      document
+        .getElementById("btn-in")
+        .addEventListener("click", () => zoomBy(1.3));
+      document
+        .getElementById("btn-out")
+        .addEventListener("click", () => zoomBy(0.75));
+      document.getElementById("btn-reset").addEventListener("click", resetView);
 
       /* ── Detail panel ── */
-      const panel = document.getElementById("panel");
-      const panelHd = document.getElementById("panel-hd");
-      const panelTitle = document.getElementById("panel-title");
-      const panelBody = document.getElementById("panel-body");
-
       function openPanel(id) {
-        const n = NODES[id];
-        if (!n) return;
-        panelTitle.textContent = n.title;
-        panelHd.style.background = n.color;
-        panelBody.style.setProperty("--pc", n.color);
-        panelBody.innerHTML = n.html;
+        const node = NODES[id];
+        if (!node) return;
+        panelTitle.textContent = node.title;
+        panelHd.style.background = node.color;
+        panelBody.style.setProperty("--pc", node.color);
+        panelBody.innerHTML = node.html;
         panelBody.scrollTop = 0;
         panel.classList.add("open");
       }
 
       document
         .getElementById("panel-close")
-        .addEventListener("click", () => panel.classList.remove("open"));
-
-      document.querySelectorAll("[data-node]").forEach((el) => {
-        el.addEventListener("click", (e) => {
-          e.stopPropagation();
-          openPanel(el.dataset.node);
-        });
+        .addEventListener("click", closePanel);
+      canvas.addEventListener("click", (event) => {
+        const node = event.target.closest("[data-node]");
+        if (node) {
+          openPanel(node.dataset.node);
+          return;
+        }
+        closePanel();
       });
-
-      document
-        .getElementById("canvas")
-        .addEventListener("click", () => panel.classList.remove("open"));
     </script>
   </body>
 </html>
